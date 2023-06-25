@@ -1,0 +1,15 @@
+body {
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+.row {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo-container {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}

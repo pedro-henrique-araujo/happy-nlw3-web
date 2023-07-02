@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./landing-page.css";
 import logoIconSvg from "../assets/logo-icon.svg";
 import logoTextSvg from "../assets/logo-text.svg";
@@ -10,11 +10,15 @@ export default function LandingPage() {
   const [callToActionButtonIsHovered, setCallToActionButtonIsHovered] =
     useState(false);
 
+  useEffect(() => {
+    document.title = "Happy | Leve felicidade para o mundo";
+  }, []);
+
   return (
     <div className="landing-page-content">
       <div className="row">
         <div className="logo-container">
-          <img src={logoIconSvg} />
+          <img className="logo-img" src={logoIconSvg} />
           <img className="logo-text" src={logoTextSvg} />
         </div>
         <div className="city-text">
